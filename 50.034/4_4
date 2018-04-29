@@ -1,0 +1,6 @@
+import numpy as np
+np.random.seed(2)
+## generate a random data set
+x = np.random.randn(30, 2)
+x[:, 1] = x[:, 1] * 100
+y = 11*x[:,0] + 3.4*x[:,1] - 4 + np.random.randn(30) ##the model
